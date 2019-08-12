@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3f4b44a-b925-4f0a-bb34-7c7775a68798" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1P9LNO4mPjbTge65NI6MOYHkwiS" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.tests.html">
+    <configuration name="Index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HW_5/Index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="tests.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HW_5/tests/tests.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="OtherFunc.tests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="OtherFunc.tests.js" working-dir="$PROJECT_DIR$/tests/hw_5">
+      <method v="2" />
+    </configuration>
+    <configuration name="hw_5.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="hw_5.js" working-dir="$PROJECT_DIR$/src/hw_5">
+      <method v="2" />
+    </configuration>
+    <configuration name="hw_5.tests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="hw_5.tests.js" working-dir="$PROJECT_DIR$/tests/hw_5">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.tests.html" />
+        <item itemvalue="Node.js.OtherFunc.tests.js" />
+        <item itemvalue="JavaScript Debug.Index.html" />
+        <item itemvalue="Node.js.hw_5.js" />
+        <item itemvalue="Node.js.hw_5.tests.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f4b44a-b925-4f0a-bb34-7c7775a68798" name="Default Changelist" comment="" />
+      <created>1565281326057</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565281326057</updated>
+      <workItem from="1565281327778" duration="4290000" />
+      <workItem from="1565301283047" duration="443000" />
+      <workItem from="1565301739539" duration="7899000" />
+      <workItem from="1565344824098" duration="5425000" />
+      <workItem from="1565574925167" duration="370000" />
+      <workItem from="1565575706739" duration="179000" />
+      <workItem from="1565575915163" duration="15000" />
+      <workItem from="1565575944784" duration="4209000" />
+      <workItem from="1565580551530" duration="4815000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/hw_5/hw_5.tests.js</url>
+          <line>241</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
