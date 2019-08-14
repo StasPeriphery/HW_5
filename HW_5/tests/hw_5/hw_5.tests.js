@@ -1,3 +1,104 @@
+
+describe('Remove 3 value', () => {
+    it('shoud return new vec ', () => {
+        let tree = new BinaryTree();
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(14);
+        tree.insert(13);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(1);
+        tree.insert(5);
+
+        tree.remove(3);
+
+        const expected = [1,2,4,5,6,7,8,9,10,13,14];
+        const actual = tree.toArray();
+        assert.deepEqual(actual, expected);
+    });
+});
+
+describe('Remove 6 value', () => {
+
+    it('shoud return new vec ', () => {
+
+        let tree = new BinaryTree();
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(14);
+        tree.insert(13);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(1);
+        tree.insert(5);
+
+        tree.remove(7);
+
+        const expected = [1,2,3,4,5,6,8,9,10,13,14];
+        const actual = tree.toArray();
+        assert.deepEqual(actual, expected);
+    });
+});
+
+
+describe('Remove 4 value', () => {
+    it('shoud return new vec ', () => {
+        let tree = new BinaryTree();
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(14);
+        tree.insert(13);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(1);
+        tree.insert(5);
+
+        tree.remove(4);
+
+        const expected = [1,2,3,5,6,7,8,9,10,13,14];
+        const actual = tree.toArray();
+        assert.deepEqual(actual, expected);
+    });
+});
+
+
+describe('Remove 5 value', () => {
+    it('shoud return new vec ', () => {
+        let tree = new BinaryTree();
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(14);
+        tree.insert(13);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(1);
+        tree.insert(5);
+
+        tree.remove(5);
+
+        const expected = [1,2,3,4,6,7,8,9,10,13,14];
+        const actual = tree.toArray();
+        assert.deepEqual(actual, expected);
+    });
+});
+
 describe('Binary search tree constructor', () => {
     const testData = [
         {
@@ -243,6 +344,32 @@ describe('Binary search tree getBalanse method [1,2,3,4,5,6,7,8,9,10,13,14]', ()
         assert.deepEqual(actual, expected);
     });
 });
+
+
+describe('Binary search tree getBalanse method [1,2,3,4,5,6,7,8,9,10,13,14]', () => {
+    it('shoud return new vec ', () => {
+
+        let tree = new BinaryTree();
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(14);
+        tree.insert(13);
+        tree.insert(3);
+        tree.insert(6);
+        tree.insert(2);
+        tree.insert(4);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(1);
+        tree.insert(5);
+
+
+        const expected = [1,2,3,4,5,6,7,8,9,10,13,14];
+        const actual = tree.toArray();
+        assert.deepEqual(actual, expected);
+    });
+});
+
 
 
 

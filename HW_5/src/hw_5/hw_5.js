@@ -124,10 +124,10 @@ BinaryTree.prototype.getBalanse = function () {
     let vec = this.toArray();
     this.root = null;
 
-    this.insert(Math.floor(vec.length / 2)+1)
+    this.insert(Math.floor(vec.length / 2) + 1)
 
     for (let i = 0; i < vec.length; i++) {
-        if(Math.floor(vec.length / 2) === i){
+        if (Math.floor(vec.length / 2) === i) {
             continue;
         }
         this.insert(vec[i]);
@@ -135,8 +135,89 @@ BinaryTree.prototype.getBalanse = function () {
 
 }
 
+BinaryTree.prototype.remove = function (value) {
+    let temp = this.root;
+    let aboveNode = findNode(temp, value);
 
+    if (aboveNode.right.value === value) {
+        delElementLeft(aboveNode);
+    } else if (aboveNode.left.value === value) {
+        delElementRight(aboveNode);
+    }
+};
 
+function delElementLeft(aboveNode) {
+    if (aboveNode.right.right) {
+        aboveNode.right.value = aboveNode.right.right.value;
+        let moveBelow = aboveNode.right;
+        while (true) {
+            moveBelow.value = moveBelow.right.value;
+            if( moveBelow.left.left === null){
+                moveBelow.left = null;
+                break;
+            }
+            moveBelow = moveBelow.right;
+        }
+        if (moveBelow.left) {
+            moveBelow.right = moveBelow.left;
+        }
+    } else {
+        if (aboveNode.right.left) {
+            aboveNode.right = aboveNode.right.left;
+        } else {
+            aboveNode.right = null;
+        }
+    }
+}
+
+function delElementRight(aboveNode) {
+    if (aboveNode.left.left) {
+        aboveNode.left.value = aboveNode.left.left.value;
+        let moveBelow = aboveNode.left;
+        while (true) {
+            moveBelow.value = moveBelow.left.value;
+            if( moveBelow.left.left === null){
+                moveBelow.left = null;
+                break;
+            }
+            moveBelow = moveBelow.left;
+        }
+
+        if (moveBelow.right) {
+            moveBelow.left = moveBelow.right;
+        }
+    } else {
+        if (aboveNode.left.right) {
+            aboveNode.left = aboveNode.left.right;
+        } else {
+            aboveNode.left = null;
+        }
+    }
+}
+
+function findNode(node, value) {
+    let rez = null;
+    if (node.right) {
+        if (node.right.value === value) {
+            return node;
+        }
+    }
+    if (node.left) {
+        if (node.left.value === value) {
+            return node;
+        }
+    }
+    if (!node.right && !node.left) {
+        return null;
+    }
+
+    if (node.value > value) {
+        rez = findNode(node.left, value);
+    } else if (node.value < value) {
+        rez = findNode(node.right, value);
+    }
+    return rez;
+}
 
 
 
